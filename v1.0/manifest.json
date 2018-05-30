@@ -1,0 +1,25 @@
+{
+
+  "manifest_version": 2,
+  "name": "AlbumCheck",
+  "version": "1.0",
+
+  "description": "Pak username. Kijk voor albums..",
+
+  "icons": {
+    "48": "icons/48.png"
+  },
+
+  "permissions": [
+    "activeTab",
+    "tabs"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.imgur.com/*"],
+      "js": ["functions.js"]
+    }
+  ]
+
+}
